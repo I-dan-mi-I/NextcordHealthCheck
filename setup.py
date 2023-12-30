@@ -19,7 +19,7 @@ requirements = read_local_file("requirements.txt").split("\n")
 
 setup(
     name="nextcordhealthcheck",
-    version="0.1.2",
+    version="0.1.3",
     description="A small Python 3 library and command line app to automate Docker health checks for nextcord bots.",
     long_description=long_description,
     long_description_content_type="text/markdown",
