@@ -22,16 +22,16 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Lint (Pylint)
-        run: pylint --rcfile=setup.cfg ./discordhealthcheck
+        run: pylint --rcfile=setup.cfg ./nextcordhealthcheck
 
       - name: Lint (Flake8)
-        run: flake8 ./discordhealthcheck
+        run: flake8 ./nextcordhealthcheck
 
       - name: Type analysis (MyPy)
-        run: mypy ./discordhealthcheck
+        run: mypy ./nextcordhealthcheck
 
       - name: Security analysis (Bandit)
-        run: bandit -r ./discordhealthcheck
+        run: bandit -r ./nextcordhealthcheck
 
       - name: Unused code detection (Vulture)
-        run: vulture --ignore-names start,reader ./discordhealthcheck
+        run: vulture --ignore-names start,reader ./nextcordhealthcheck
